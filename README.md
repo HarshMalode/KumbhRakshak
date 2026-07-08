@@ -27,29 +27,41 @@ An intelligent crowd management and public safety platform designed for large-sc
 
 # 📸 System Preview
 
-### Home Page
+### 🏠 Home Page
 
-(Add Screenshot)
+<p align="center">
+  <img src="WebContent/screenshots/home.png" alt="Home Page" width="90%">
+</p>
 
-### Admin Dashboard
+### 🛡️ Admin Dashboard
 
-(Add Screenshot)
+<p align="center">
+  <img src="WebContent/screenshots/admin-dashboard.png" alt="Admin Dashboard" width="90%">
+</p>
 
-### Police Help Center Dashboard
+### 👮 Police Help Center Dashboard
 
-(Add Screenshot)
+<p align="center">
+  <img src="WebContent/screenshots/police-dashboard.png" alt="Police Help Center Dashboard" width="90%">
+</p>
 
-### User Dashboard
+### 👤 User Dashboard
 
-(Add Screenshot)
+<p align="center">
+  <img src="WebContent/screenshots/user-dashboard.png" alt="User Dashboard" width="90%">
+</p>
 
-### AI Crowd Monitoring
+### 📊 AI Crowd Monitoring
 
-(Add Screenshot)
+<p align="center">
+  <img src="WebContent/screenshots/monitoring.png" alt="AI Crowd Monitoring" width="90%">
+</p>
 
-### Missing Person Finder
+### 🧑‍🤝‍🧑 Missing Person Finder
 
-(Add Screenshot)
+<p align="center">
+  <img src="WebContent/screenshots/missingpeople.png" alt="Missing Person Finder" width="90%">
+</p>
 
 ---
 
@@ -217,8 +229,6 @@ KumbhRakshak/
 
 # 📸 Screenshots
 
-# 📸 Screenshots
-
 | Home | Admin Dashboard (Add Police Helpline) |
 |------|---------------------------------------|
 | <img src="WebContent/screenshots/home.png" alt="Home" width="450"> | <img src="WebContent/screenshots/Add-police.png" alt="Admin Dashboard - Add Police Helpline" width="450"> |
@@ -229,7 +239,7 @@ KumbhRakshak/
 
 | Add & View News (User Safety) | Missing Person Finder (Detection) |
 |-------------------------------|-----------------------------------|
-| <img src="WebContent/screenshots/news-user-safety.png" alt="Add & View News" width="450"> | <img src="WebContent/screenshots/Detection.png" alt="Missing Person Finder" width="450"> |
+| <img src="WebContent/screenshots/AddViewNews.png" alt="Add & View News" width="450"> | <img src="WebContent/screenshots/Detection.png" alt="Missing Person Finder" width="450"> |
 
 ---
 
@@ -261,6 +271,8 @@ git clone https://github.com/yourusername/KumbhRakshak.git
 - Start Apache and MySQL.
 
 - Run the application or website.
+
+         http://localhost:8080/KumbhRakshak/
 
 ---
 

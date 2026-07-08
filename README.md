@@ -217,17 +217,19 @@ KumbhRakshak/
 
 # 📸 Screenshots
 
-| Home | Admin Dashboard (Add Police Helpline) |
-|------|----------------|
-| *(Screenshot)* | *(Screenshot)* |
+# 📸 Screenshots
 
-| Police Dashboard (Add Missing People)| User Dashboard (View Location) |
-|----------------|---------------|
-| *(Screenshot)* | *(Screenshot)* |
+| Home | Admin Dashboard (Add Police Helpline) |
+|------|---------------------------------------|
+| <img src="WebContent/screenshots/home.png" alt="Home" width="450"> | <img src="WebContent/screenshots/Add-police.png" alt="Admin Dashboard - Add Police Helpline" width="450"> |
+
+| Police Dashboard (Add Missing People) | User Dashboard (View Locations) |
+|-----------------------------------|---------------------------------|
+| <img src="WebContent/screenshots/AddMissingPeople.png" alt="Police Dashboard" width="450"> | <img src="WebContent/screenshots/Locations.png" alt="User Dashboard" width="450"> |
 
 | Add & View News (User Safety) | Missing Person Finder (Detection) |
-|--------------------|----------------------|
-| *(Screenshot)* | *(Screenshot)* |
+|-------------------------------|-----------------------------------|
+| <img src="WebContent/screenshots/news-user-safety.png" alt="Add & View News" width="450"> | <img src="WebContent/screenshots/Detection.png" alt="Missing Person Finder" width="450"> |
 
 ---
 

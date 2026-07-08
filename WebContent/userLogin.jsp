@@ -1,0 +1,251 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Login | Crowd Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="ISO-8859-1">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        min-height: 100vh;
+        padding: 20px;
+        background:
+          linear-gradient(rgba(10,20,40,0.65), rgba(10,20,40,0.8)),
+          url("<%=request.getContextPath()%>/images/kumbh.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-container {
+        background: #ffffff;
+        padding: 50px 36px 40px;
+        border-radius: 18px;
+        width: 100%;
+        max-width: 420px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+        text-align: center;
+        animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .login-title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #1e2a47;
+    }
+
+    .login-sub {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 28px;
+    }
+
+    .field-group {
+        position: relative;
+        margin-bottom: 22px;
+    }
+
+    .field-group i {
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-50%);
+        color: #888;
+        font-size: 15px;
+    }
+
+    .field-group input {
+        width: 100%;
+        padding: 13px 12px 13px 42px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        outline: none;
+        transition: 0.2s;
+        
+    }
+
+    .field-group input:focus {
+        border-color: #0d6efd;
+       box-shadow: 0 0 0 2px rgba(13,110,253,0.15);
+    }
+
+   .login-btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #0d6efd, #084298);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .login-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(13,110,253,0.35);
+    }
+
+    .back-link {
+        margin-top: 20px;
+        display: block;
+        font-size: 13px;
+        color: #0d6efd;
+        text-decoration: none;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+    * {
+  box-sizing: border-box;
+}
+
+    .error-msg {
+        margin-top: 15px;
+        font-size: 13px;
+        color: #0d6efd;
+    }
+
+    .link-area {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .link-area a {
+        color: #0d6efd;
+        text-decoration: none;
+    }
+
+    .link-area a:hover {
+        text-decoration: underline;
+    }
+    /* =========================
+   IPHONE VIEW – ADMIN LOGIN
+   ========================= */
+@media (max-width: 430px) {
+
+    body {
+        padding: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-container {
+        padding: 28px 22px;
+        max-width: 340px;
+        border-radius: 14px;
+    }
+
+    .login-title {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .login-sub {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .field-group {
+        margin-bottom: 16px;
+    }
+
+    .field-group input {
+        font-size: 14px;
+        padding: 11px 12px 11px 40px;
+    }
+
+    .field-group i {
+        left: 12px;
+        font-size: 14px;
+    }
+
+    .show-pass {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .login-btn {
+        padding: 11px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .back-link {
+        font-size: 12px;
+        margin-top: 14px;
+    }
+}
+
+/* EXTRA SMALL (iPhone SE / 360px) */
+@media (max-width: 360px) {
+
+    .login-container {
+        padding: 24px 18px;
+    }
+
+    .login-title {
+        font-size: 20px;
+    }
+
+    .login-sub {
+        font-size: 11px;
+    }
+}
+    
+    </style>
+</head>
+
+<body>
+
+<div class="login-container">
+    <div class="login-title">User Login</div>
+    <div class="login-sub">Login to access crowd information</div>
+
+    <form action="UserLoginServlet" method="post">
+        <div class="field-group">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email ID" required>
+        </div>
+
+        <div class="field-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="login-btn">Log In</button>
+    </form>
+
+    <% if(request.getParameter("error") != null) { %>
+        <div class="error-msg">Invalid login credentials!</div>
+    <% } %>
+
+    <div class="link-area">
+        <a href="register.jsp">New user? Register</a><br>
+        <a href="welcome.jsp">Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>

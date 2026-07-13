@@ -326,17 +326,13 @@ This project is licensed under the MIT License.
 
 👨‍💻 **Developed by:** Harshwardhan Malode
 
-📧 Email:
-harshwardhanmalode798@gmail.com
+📧 Email: harshwardhanmalode798@gmail.com
 
-🔗 LinkedIn:
-https://www.linkedin.com/in/harshwardhan-malode-226900386
+🔗 LinkedIn: https://www.linkedin.com/in/harshwardhan-malode-226900386
 
-🐙 GitHub:
-https://github.com/harshwardhan951
+🐙 GitHub: https://github.com/harshwardhan951
 
-🌐 Portfolio:
-Coming Soon
+🌐 Portfolio: Coming Soon
 
 ---
 
